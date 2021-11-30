@@ -1,0 +1,11 @@
+tput cup $1 $2 $3 $4 $5
+tput clear
+bold=$(tput smso)
+offbold=$(tput rmso)
+echo $bold
+tput cup 8  20; echo "Today's Classes"
+tput cup 10 20; echo "Assignments due today"
+tput cup 12 20; echo "All incomplete assignments"
+tput cup 14 20; echo "Add an assignment"
+tput cup 16 20; echo "Update an assignment"
+echo $offbold
