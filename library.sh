@@ -44,4 +44,4 @@ case $day in
         echo 'Please enter a day of the week."
 esac
 
-#We need All incomplete, Add an assignment, Update an assignment
+#We need All incomplete, Update an assignment
