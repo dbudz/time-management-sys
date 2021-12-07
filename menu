@@ -1,11 +1,34 @@
-tput cup $1 $2 $3 $4 $5
+tput cup $1 $2 $3 $4 $5 $6
 tput clear
 bold=$(tput smso)
 offbold=$(tput rmso)
 echo $bold
-tput cup 12 20; echo "All Classes"
-tput cup 14 20; echo "All Assignments"
+tput cup 10 20; echo "All classes"
+tput cup 12 20; echo "Class lookup"
+tput cup 14 20; echo "All assignments"
 tput cup 16 20; echo "All incomplete assignments"
 tput cup 18 20; echo "Add an assignment"
 tput cup 20 20; echo "Update an assignment"
 echo $offbold
+
+    All classes)
+        cd class.sh
+        ;;
+    Class lookup)
+        cd class_lookup.sh
+        ;;
+    All assignments)
+        cd all_assignments.sh
+        ;;
+    All incomplete assignments)
+        cd incomplete_assignments.sh
+        ;;
+    Add an assignment)
+        cd add_assignment.sh
+        ;; 
+    Update an assignment)
+        cd update_assignment.sh
+        ;;
+    *)
+        echo 'Please enter a menu choice.'
+esac
