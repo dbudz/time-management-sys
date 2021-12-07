@@ -7,4 +7,4 @@ read -p "Please enter the course for the status you would like to add: " status
 
 awk -F ";" course description dueDate status >> homework 
 
-#Didn't test
+
