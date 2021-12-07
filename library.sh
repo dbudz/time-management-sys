@@ -1,5 +1,5 @@
 #All assignments 
-!/bin/bash
+#!/bin/bash
 
 read -n1 -p "Do you want too display the assignemnt due? [y,n] "
 case $assignment in
@@ -43,5 +43,15 @@ case $day in
     *)
         echo 'Please enter a day of the week."
 esac
+
+#Add assignment (untested)
+#!/bin/bash
+
+read -p "Please enter the course for the assignment you would like to add: " course 
+read -p "Please enter the description for the assignment you would like to add: " description
+read -p "Please enter the due date for the assignment you would like to add: " dueDate 
+read -p "Please enter the course for the status you would like to add: " status
+
+awk -F ";" course description dueDate status >> homework 
 
 #We need All incomplete, Update an assignment
