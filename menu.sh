@@ -7,7 +7,6 @@ PS3="Enter what you would like to view: "
  
 select menu_item in "Classes" "Assignments" "Incomplete Assignments" "Add an Assignment" "Update an Assignment" "Quit"
 do
-	echo $menu_item
 	case $menu_item in
 		"Classes")
 			echo "1"
