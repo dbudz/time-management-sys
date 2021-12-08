@@ -1,10 +1,13 @@
 #!/bin/bash
-
-read -p "Please enter the course for the assignment you would like to add: " course 
-read -p "Please enter the description for the assignment you would like to add: " description
-read -p "Please enter the due date for the assignment you would like to add: " dueDate 
-read -p "Please enter the course for the status you would like to add: " status
-
-awk -F ";" course description dueDate status >> homework 
-
-
+add_assignment () {
+	read -p "Please enter the course for the assignment you would like to add (eg. BCS215): " input
+	printf $input";" >> assignments
+	read -p "Please enter the description for the assignment you would like to add: " input
+	printf $input";" >> assignments
+	read -p "Please enter the due date for the assignment you would like to add (mm/dd/yyyy): " input
+	printf $input";" >> assignments
+	read -p "Please enter the status for the assignment you would like to add (Open/Completed): " input
+	printf $input >> assignments
+	echo >> assignments
+	source ./menu.sh
+		}

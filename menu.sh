@@ -1,4 +1,5 @@
 #!/bin/bash
+source add_assignment.sh
 tput clear
 PS3="Enter what you would like to view: "
  
@@ -15,7 +16,7 @@ do
 			echo "3"
 			;;		
 		"Add an Assignment")
-			echo "4"
+			add_assignment
 			;;		
 		"Update an Assignment")
 			echo "5"
