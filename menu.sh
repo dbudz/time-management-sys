@@ -1,8 +1,5 @@
 #!/bin/bash
 tput clear
-bold=$(tput smso)
-offbold=$(tput rmso)
-echo $bold
 PS3="Enter what you would like to view: "
  
 select menu_item in "Classes" "Assignments" "Incomplete Assignments" "Add an Assignment" "Update an Assignment" "Quit"
@@ -31,4 +28,3 @@ do
 			;;		
 	esac
 done
-echo $offbold
