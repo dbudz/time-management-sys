@@ -20,7 +20,7 @@ do
 			;;
 		"Incomplete Assignments")
 			echo "4"
-			
+			./incomplete.sh
 			;;		
 		"Assignment Due Date") 
 			echo "5"
