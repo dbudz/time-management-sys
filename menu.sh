@@ -20,7 +20,7 @@ do
 			;;		
 		"Add an Assignment")
 			echo "4"
-			./add_assignment.sh
+			./add_assignment
 			;;		
 		"Update an Assignment")
 			echo "5"
