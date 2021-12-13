@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 read -n1 -p "Do you want too display the assignemnt due? [y,n] "
 case $assignment in
