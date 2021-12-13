@@ -3,7 +3,7 @@ source add_assignment.sh
 tput clear
 PS3="Enter what you would like to view: "
  
-select menu_item in "Classes" "Assignments" "Incomplete Assignments" "Add an Assignment" "Update an Assignment" "Quit"
+select menu_item in "Classes" "Assignments" "Incomplete Assignments" "Assignment Due Date" "Add an Assignment" "Update an Assignment" "Quit"
 do
 	case $menu_item in
 		"Classes")
@@ -18,18 +18,23 @@ do
 			echo "3"
 			
 			;;		
-		"Add an Assignment")
+		"Assignment Due Date") 
 			echo "4"
+			./dueDate.sh
+			;;
+		"Add an Assignment")
+			echo "5"
 			./add_assignment
 			;;		
 		"Update an Assignment")
-			echo "5"
+			echo "6"
+			
 			;;
 		"Quit")
 			exit
 			;;
 		*)		
-			echo "Error: Please try again (select 1..6)!"
+			echo "Error: Please try again (select 1..7)!"
 			;;		
 	esac
 done
