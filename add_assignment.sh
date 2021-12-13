@@ -9,5 +9,7 @@ add_assignment () {
 	read -p "Please enter the status for the assignment you would like to add (Open/Completed): " input
 	printf $input >> assignments
 	echo >> assignments
+	echo "Assignment Added."
+	sleep 2
 	source ./menu.sh
 		}
