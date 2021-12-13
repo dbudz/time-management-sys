@@ -32,7 +32,7 @@ do
 			;;		
 		"Update an Assignment")
 			echo "7"
-			
+			./update_assignment
 			;;
 		"Quit")
 			exit
