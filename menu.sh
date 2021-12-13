@@ -8,15 +8,19 @@ do
 	case $menu_item in
 		"Classes")
 			echo "1"
+			./class.sh
 			;;
 		"Assignments")
 			echo "2"
+			./assignments.sh
 			;;
 		"Incomplete Assignments")
 			echo "3"
+			
 			;;		
 		"Add an Assignment")
-			add_assignment
+			echo "4"
+			./add_assignment.sh
 			;;		
 		"Update an Assignment")
 			echo "5"
