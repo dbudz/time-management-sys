@@ -5,7 +5,7 @@ read NAME
 
 if grep -q $NAME assignments.txt 
 then
-	awk -v AWKVAR="$NAME" '$2 ~ AWKVAR{ print "This assignment is due on " $3 "."; }' assignments.txt
+	awk -v AWKVAR="$NAME" '$2 ~ AWKVAR{ print "This assignment is due on " $3 "."; }' assignments
 else
 	echo "No assignment with the name" $NAME "exists."
 fi
