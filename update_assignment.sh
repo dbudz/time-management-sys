@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 read -p "What status would you like to change?" status
 case $status in
   Open)
