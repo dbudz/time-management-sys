@@ -1,5 +1,4 @@
 #!/bin/bash
-add_assignment () {
 	read -p "Please enter the course for the assignment you would like to add (eg. BCS215): " input
 	printf $input";" >> assignments
 	read -p "Please enter the description for the assignment you would like to add: " input
@@ -12,4 +11,4 @@ add_assignment () {
 	echo "Assignment Added."
 	sleep 2
 	source ./menu.sh
-		}
+done
