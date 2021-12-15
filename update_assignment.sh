@@ -1,6 +1,7 @@
 #!/bin/bash
+clear
 repeat=y
-while ( repeat = $y )
+while [ $repeat = y ]
 do
 read -p "What status would you like to add to your assignment? (Open/Completed) " status
 read -p "What is the name of the assignment you would like to modify? " name
@@ -31,5 +32,6 @@ case $status in
   *) echo Please enter the status you would like to change
 esac
 read -n1 -p "Would you like to update another assignment? (y/n) " repeat
+echo
 done
 source ./menu.sh
