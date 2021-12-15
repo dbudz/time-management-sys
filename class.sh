@@ -1,9 +1,9 @@
 #!/bin/bash
-
-read -n1 -p "Do you want to display your class schedule? [y,n]" class 
 clear
-case $class in  
-  y|Y) cat class_schedule ;; 
-  n|N) echo User does not want to display class schedule  ;; 
-  *) echo Please enter a y or n ;; 
-esac
+end=n
+while [ $end = n ]
+do
+cat class_schedule
+read -n1 -p "Press enter to go to main menu." end
+done
+source ./menu.sh

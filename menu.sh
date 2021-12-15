@@ -1,38 +1,31 @@
 #!/bin/bash
-source add_assignment.sh
 tput clear
+source ./dueDate.sh
 PS3="Enter what you would like to view: "
  
 select menu_item in "Classes" "Class Lookup" "Assignments" "Incomplete Assignments" "Assignment Due Date" "Add an Assignment" "Update an Assignment" "Quit"
 do
 	case $menu_item in
 		"Classes")
-			echo "1"
 			./class.sh
 			;;
 		"Class Lookup")
-			echo "2" 
 			./class_lookup.sh
 			;;
 		"Assignments")
-			echo "3"
 			./assignments.sh
 			;;
 		"Incomplete Assignments")
-			echo "4"
 			./incomplete.sh
 			;;		
 		"Assignment Due Date") 
-			echo "5"
-			./dueDate.sh
+			dueDate
 			;;
 		"Add an Assignment")
-			echo "6"
-			./add_assignment
+			./add_assignment.sh
 			;;		
 		"Update an Assignment")
-			echo "7"
-			./update_assignment
+			./update_assignment.sh
 			;;
 		"Quit")
 			exit
